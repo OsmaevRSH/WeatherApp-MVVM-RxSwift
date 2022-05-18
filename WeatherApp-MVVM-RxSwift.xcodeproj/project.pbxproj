@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1AF540A28315A780084322E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF540928315A780084322E /* ViewModel.swift */; };
+		C1AF540C283165190084322E /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF540B283165190084322E /* HttpService.swift */; };
+		C1AF540E283165FC0084322E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF540D283165FC0084322E /* Model.swift */; };
 		C1B683F32831500100692132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B683F22831500100692132 /* AppDelegate.swift */; };
 		C1B683F52831500100692132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B683F42831500100692132 /* SceneDelegate.swift */; };
 		C1B683F72831500100692132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B683F62831500100692132 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		2048CEE390B87C2FFD7A5F98 /* Pods-WeatherApp-MVVM-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp-MVVM-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp-MVVM-RxSwift/Pods-WeatherApp-MVVM-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		2FEA081D0FAC7617EF231EF6 /* Pods-WeatherApp-MVVM-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp-MVVM-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp-MVVM-RxSwift/Pods-WeatherApp-MVVM-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B796564AC39F68C887BFBFFD /* libPods-WeatherApp-MVVM-RxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherApp-MVVM-RxSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AF540928315A780084322E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C1AF540B283165190084322E /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		C1AF540D283165FC0084322E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C1B683EF2831500100692132 /* WeatherApp-MVVM-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherApp-MVVM-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B683F22831500100692132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B683F42831500100692132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				2FEA081D0FAC7617EF231EF6 /* Pods-WeatherApp-MVVM-RxSwift.debug.xcconfig */,
 				2048CEE390B87C2FFD7A5F98 /* Pods-WeatherApp-MVVM-RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +89,9 @@
 				C1B683F22831500100692132 /* AppDelegate.swift */,
 				C1B683F42831500100692132 /* SceneDelegate.swift */,
 				C1B683F62831500100692132 /* ViewController.swift */,
+				C1AF540928315A780084322E /* ViewModel.swift */,
+				C1AF540B283165190084322E /* HttpService.swift */,
+				C1AF540D283165FC0084322E /* Model.swift */,
 				C1B683F82831500100692132 /* Main.storyboard */,
 				C1B683FB2831500300692132 /* Assets.xcassets */,
 				C1B683FD2831500300692132 /* LaunchScreen.storyboard */,
@@ -191,7 +199,10 @@
 			files = (
 				C1B683F72831500100692132 /* ViewController.swift in Sources */,
 				C1B683F32831500100692132 /* AppDelegate.swift in Sources */,
+				C1AF540A28315A780084322E /* ViewModel.swift in Sources */,
+				C1AF540E283165FC0084322E /* Model.swift in Sources */,
 				C1B683F52831500100692132 /* SceneDelegate.swift in Sources */,
+				C1AF540C283165190084322E /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -356,7 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -385,7 +396,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
